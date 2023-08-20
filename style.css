@@ -1,0 +1,339 @@
+* {
+    margin: 0px;
+
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+.header {
+    box-shadow: 4px 4px 10px gainsboro;
+    display: flex;
+    background-color: white;
+    padding: 18px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logodiv {
+    margin-left: 28px;
+
+}
+
+.header ul {
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 8px;
+    width: 900px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.header a{
+    text-decoration: none;
+    color: #014E78;
+}
+.item1-parent{
+    /* border: 1px solid black; */
+    position: relative;
+}
+.item1-parent:hover .subul-doc{
+    display: flex;
+}
+
+div ul li .subul-doc{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+    z-index: 9;
+    align-items: flex-start; 
+    justify-content: space-around;
+}
+div ul li .subul-doc .subli-doc:hover{
+        text-decoration: underline;
+        text-decoration-color: #014E78;
+        cursor: pointer;
+        color: #C02942;
+}
+.bold-drop{
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+.header ul .items {
+    list-style-type: none;
+    /* border: 2px solid blue; */
+    padding: 4px;
+    margin: 2px;
+    color: #014E78;
+    font-weight: 400;
+
+}
+
+.header ul span {
+    /* border: 2px solid red; */
+    padding: 4px;
+    margin-left: 4px;
+    color: #014E78;
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 2px;
+}
+
+.nav-top-right-logos {
+    padding-top: 16px;
+    padding-left: 40px;
+}
+
+.phone-logo {
+    color: white;
+    background-color: #C02942;
+    margin: 2px;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+.login-dropdown{
+    position:absolute;
+    top: 36px;
+    right: 0px;
+    background-color: white;
+    color: #014E78;
+    text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 80px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px gainsboro;
+    display: none;
+    text-decoration: underline;
+    text-decoration-color: #014E78;
+}
+
+
+
+.user-logo:hover .login-dropdown{
+    display: inline;
+    color: #014E78;
+   
+}
+.user-logo {
+    color: white;
+    border: 1px solid #C02942;
+    background-color: white;
+    margin: 2px;
+    padding: 8px 36px;
+    color: white;
+    position: relative;
+    border-radius: 4px;
+}
+
+.fa-user {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: #C02942;
+}
+
+.fa-user-down {
+    position: absolute;
+    bottom: 16px;
+    right: 18px;
+    color: #C02942;
+}
+
+.user-logo:hover {
+    background-color: #C02942;
+}
+
+.user-logo:hover .fa-user {
+    color: white;
+}
+
+.user-logo:hover .fa-user-down {
+    color: white;
+}
+
+.horizantal-box {
+    width: 100%;
+    /* height: 50px; */
+    background-color: white;
+    margin-top: 8px;
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    align-items: center;
+    box-shadow: 4px 4px 10px gainsboro;
+
+}
+
+.horizantal-box li {
+    display: inline-block;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.horizantal-box>li {
+    display: inline-block;
+    word-spacing: 2px;
+    color: #014E78;
+}
+
+#last-li {
+    margin-left: 6px;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.blue-container {
+    position: relative;
+    width: 100%;
+    height: 265px;
+    background-color: #014E78;
+    color: white;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    flex-direction: column;
+    box-shadow: 4px 4px 10px gainsboro;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.blue-container p{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 110px;
+
+}
+
+form .first-input {
+   border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    padding: 14px 16px;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+.location-logo-span{
+    color: silver;
+    padding: 4x 4px;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+}
+
+form .second-input {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    width: 600px;
+    font-size: 16px;
+    color: black;
+}
+
+.search-logo-span {
+    padding: 8px 22px;
+    background-color: #C02942;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    right: 78px;
+    cursor: pointer;
+}
+/* third section start */
+.third-section{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    width: 95%;
+    margin: 12px auto;
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 4px 4px 10px gainsboro;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.third-section #img-box{
+    position: relative;
+    bottom: 0px;
+    right:30px;
+    border-radius: 50%;
+    padding: 16px;
+    box-shadow: 4px 4px  10px gainsboro;
+    background-color: white;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+.third-section img{
+    background-color: white;
+    border-radius: 44%;
+}
+.third-section p{
+    position: relative;
+    top: 4px;
+    left: 4px;
+
+    color: black;
+} 
+.third-section-box{
+    font-size: 12px;
+    border: 1px solid seashell;
+    width: 300px;
+    height: 6.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+.section-four{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 26px 26px 26px 26px;
+}
+.top-p{
+    margin-bottom: 12px;
+    color: #014E78;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+/* main flex container-4 */
+.section-four .flex-box-4 .sub-box{
+    /* border: 2px solid black; */
+    padding: 8px 8px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+/* sub flexx-cotainer-4 */
+.flex-box-4{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+ .section-four .flex-box-4 .sub-box img{
+    border-radius: 50%;    
+} 
