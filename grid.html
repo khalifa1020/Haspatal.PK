@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            display: grid;
+            width: 80%;
+            height: 500px;
+            border: 2px solid black;
+            gap: 10px;
+            grid-template-columns:350px 350px 350px;
+            grid-template-rows: ;
+        }
+        .container div{
+            background-color: brown;
+        }
+        .container .item-1{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .container div{
+            text-align: center;
+            font-size: 30px;
+        }
+        .container .item-2{
+            grid-row-start: 2;
+            grid-row-end:6 ;
+        }
+        .container .item-3{
+            grid-row-start: 2;
+            grid-row-end:4;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="item-1"> 1</div>
+            <div class="item-2">2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <!-- <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div> -->
+        </div>
+</body>
+</html>
